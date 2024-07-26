@@ -3,7 +3,6 @@
 ## Project Overview
 This project involved analyzing Amazon Prime Video data using SQL and Power BI. The aim was to understand viewership trends, content performance, and customer preferences.
 
-[GitHub repo](https://github.com/mahesh655/Amazon-Prime-Video-Analysis.git)
 
 ## Tools and Technologies
 - **Database:** SQL
@@ -20,8 +19,8 @@ This project involved analyzing Amazon Prime Video data using SQL and Power BI. 
 ## Dashboard Images
 [Link to Power BI report](https://app.powerbi.com/groups/me/reports/1a2b3c4d5e6f7g8h9i0j/ReportSection?experience=power-bi)
 
-![Initial Dashboard](pics/amazon_prime1.png)
-![Updated Dashboard](pics/amazon_prime2.png)
+[Initial Dashboard](Screenshot2024-07-21190408.png)
+
 
 ## SQL Queries Used
 
