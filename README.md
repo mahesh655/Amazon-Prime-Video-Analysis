@@ -44,45 +44,46 @@ FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
-
+```
 ### Top Genres by Viewership
 ```sql
 SELECT Genre, SUM(WatchTime) AS TotalWatchTime
 FROM User_Watch_History
 GROUP BY Genre
 ORDER BY TotalWatchTime DESC;
-
+```
 ### Monthly Active Users
 ```sql
 SELECT DATE_FORMAT(WatchDate, '%Y-%m') AS Month, COUNT(DISTINCT UserId) AS ActiveUsers
 FROM User_Watch_History
 GROUP BY Month
 ORDER BY Month;
-
+```
 ### Content Performance by Region
 ```sql
 SELECT Region, Genre, SUM(WatchTime) AS TotalWatchTime
 FROM User_Watch_History
 GROUP BY Region, Genre
 ORDER BY Region, TotalWatchTime DESC;
-
-###Average Watch Time by Age Group
+```
+### Average Watch Time by Age Group
 ```sql
 SELECT AgeGroup, AVG(WatchTime) AS AvgWatchTime
 FROM User_Watch_History
 GROUP BY AgeGroup
 ORDER BY AvgWatchTime DESC;
-
+```
 ### Customer Ratings and Reviews Analysis
 ```sql
 SELECT Rating, COUNT(Reviews) AS ReviewCount
 FROM User_Watch_History
 GROUP BY Rating
 ORDER BY Rating DESC;
+```
 ### Interactive Filtering for Detailed Analysis
 ```sql
 SELECT *
 FROM User_Watch_History
 WHERE Genre = 'Drama' AND Region = 'North America' AND WatchDate BETWEEN '2023-01-01' AND '2023-12-31';
-
+```
 
